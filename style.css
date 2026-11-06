@@ -1,0 +1,334 @@
+
+/* =========================
+   الإعدادات العامة
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Tahoma", Arial, sans-serif;
+    direction: rtl;
+    text-align: right;
+    background-color: #f7f8f2;
+    color: #26352c;
+    line-height: 1.9;
+}
+
+/* =========================
+   رأس الموقع
+========================= */
+
+header {
+    background: linear-gradient(135deg, #123d2c, #276749);
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+header h1 {
+    font-size: 35px;
+    color: #e8d39b;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 16px;
+    color: #f4f0df;
+}
+
+/* =========================
+   قائمة التنقل
+========================= */
+
+nav {
+    margin-top: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 9px 17px;
+    border-radius: 25px;
+    transition: 0.3s;
+    font-size: 15px;
+}
+
+nav a:hover {
+    background-color: #d6b96c;
+    color: #173c2d;
+}
+
+/* =========================
+   المحتوى الرئيسي
+========================= */
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 35px auto;
+    min-height: 60vh;
+}
+
+section {
+    background-color: white;
+    padding: 28px;
+    margin-bottom: 25px;
+    border-radius: 16px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+    border: 1px solid #e9eadf;
+}
+
+section h2 {
+    color: #205b40;
+    font-size: 25px;
+    margin-bottom: 18px;
+    border-right: 4px solid #c6a653;
+    padding-right: 12px;
+}
+
+section h3 {
+    color: #997b35;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+section p {
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+/* =========================
+   البطاقات
+========================= */
+
+article {
+    background-color: #f8f8f1;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 12px;
+    border: 1px solid #e5e4d5;
+    transition: 0.3s;
+}
+
+article:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+/* =========================
+   الروابط
+========================= */
+
+a {
+    color: #286b4a;
+}
+
+main a {
+    display: inline-block;
+    margin-top: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main a:hover {
+    color: #b18b36;
+}
+
+/* =========================
+   الأزرار
+========================= */
+
+button {
+    background-color: #236345;
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 9px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #c4a453;
+    color: #183b2c;
+}
+
+/* =========================
+   حقول الإدخال
+========================= */
+
+form {
+    max-width: 550px;
+    margin: 20px auto;
+}
+
+label {
+    display: block;
+    color: #28563e;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #d8ddcf;
+    border-radius: 9px;
+    font-size: 15px;
+    font-family: inherit;
+    background-color: #fcfcf9;
+    outline: none;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #347b54;
+    box-shadow: 0 0 5px rgba(52,123,84,0.2);
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* =========================
+   القوائم
+========================= */
+
+ul {
+    padding-right: 25px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* =========================
+   صفحة القرآن الكريم
+========================= */
+
+article p {
+    font-size: 20px;
+    line-height: 2.3;
+    text-align: center;
+    color: #31563e;
+}
+
+/* =========================
+   التذييل
+========================= */
+
+footer {
+    background-color: #153e2d;
+    color: #eee8d7;
+    text-align: center;
+    padding: 22px 10px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* =========================
+   تنسيق الموبايل
+========================= */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 22px 10px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav {
+        gap: 5px;
+    }
+
+    nav a {
+        font-size: 13px;
+        padding: 7px 10px;
+    }
+
+    main {
+        width: 94%;
+        margin: 20px auto;
+    }
+
+    section {
+        padding: 18px;
+    }
+
+    section h2 {
+        font-size: 21px;
+    }
+
+    article p {
+        font-size: 17px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+/* تنسيق صفحة تسجيل الخروج */
+
+.container {
+    background: #ffffff;
+    width: 85%;
+    max-width: 450px;
+    margin: 100px auto;
+    padding: 35px 20px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.12);
+}
+
+.container h2 {
+    color: #176b50;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.container h3 {
+    color: #176b50;
+    font-size: 23px;
+}
+
+.container p {
+    color: #666;
+    font-size: 17px;
+    margin: 20px 0;
+    line-height: 1.8;
+}
+
+.btn {
+    display: inline-block;
+    background: #176b50;
+    color: white;
+    text-decoration: none;
+    padding: 13px 25px;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #0d4936;
+}
